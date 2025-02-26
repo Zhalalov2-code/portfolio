@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.navbar {
+    position: sticky;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 1px #333;
+    background: rgba(33, 33, 33, 0.9);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;  
+    top: 0px;
+    padding: 15px; 
+    z-index: 1000; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #4CAF50; 
+    transform: scale(1.1);
+}
+
+.zhalalov2{
+    font-size: 20px;
+    color: greenyellow;
+    position: relative;
+    top: 10px;
+}
+
+.iconlinkedln {
+    font-size: 20px;
+    color: #ffffff; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.iconlinkedln:hover {
+    color: #2196F3; 
+    transform: scale(1.1);
+}
+
+button { 
+    background: white; 
+    border-radius: 10px;
+    color: black;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+button:hover {
+    background-color: yellowgreen;
+    color: white;
+    transform: scale(1.05); 
+    box-shadow: 0px 0px 5px 1px yellowgreen;
+}
+
+button:active { 
+    color: black; 
+    background: white;
+    transform: scale(0.95);
+    box-shadow: 0px 0px 5px 1px white;
+}

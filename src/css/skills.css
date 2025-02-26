@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.skills{
+    font-family: 'Montserrat', sans-serif;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 730px;
+    border: solid 1px #333;
+    background: rgba(33, 33, 33, 0.9);
+    color: white;
+}
+
+.titleSkills{
+    color: greenyellow;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+
+.titleFrontend{
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.titleBackend{
+    position: relative;
+    left: 100px;
+    top: 130px;
+}
+
+.html{
+    width: 150px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+}
+.css{
+    width: 120px;
+    position: relative;
+    left: 150px;
+    top: 72px;
+}
+
+.js{
+    width: 130px;
+    position: relative;
+    left: 200px;
+    top: 72px;
+}
+
+.boostrap{
+    width: 190px;
+    position: relative;
+    left: 250px;
+    top: 72px;
+}
+.jquery{
+    width: 140px;
+    position: relative;
+    left: 300px;
+    top: 72px;
+}
+.react{
+    width: 140px;
+    position: relative;
+    left: -650px;
+    top: 272px;
+}
+.fastapi{
+    width: 180px;
+    position: relative;
+    left: -600px;
+    top: 272px;
+}
+.nodejs{
+    width: 140px;
+    position: relative;
+    left: 470px;
+    top: 82px;
+}
+.git{
+    width: 220px;
+    position: relative;
+    left: 500px;
+    top: 82px;
+}
+.github{
+    width: 180px;
+    position: relative;
+    left: 510px;
+    top: 82px;
+}
+
+.process{
+    position: relative;
+    top: 170px;
+    text-align: center;
+    color: yellowgreen;
+}
