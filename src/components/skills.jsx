@@ -14,23 +14,27 @@ function Skills() {
     return (
         <div>
             <div className="container skills">
-                <h4 className='titleSkills'>skills()</h4>
-                <div>
-                    <h3 className='titleFrontend'>Frontend:</h3>
-                    <img className='html' src={html} alt="" />
-                    <img className='css' src={css3} alt="" />
-                    <img className='js' src={js} alt="" />
-                    <img className='boostrap' src={boostrap} alt="" />
-                    <img className='jquery' src={jquery} alt="" />
-                    <img className='react' src={react} alt="" />
-                    <img className='fastapi' src={fastapi} alt="" />
-                    <img className='nodejs' src={nodejs} alt="" />
-                    <img className='git' src={git} alt="" />
-                    <img className='github' src={github} alt="" />
-                </div>
-                <div>
-                    <h3 className='titleBackend'>Backend:</h3>
-                    <h4 className='process'>In the learning process...</h4>
+                <div className='div1'>
+                    <h4 className='titleSkills'>skills()</h4>
+                    <div className='disFrontend'>
+                        <div>
+                            <h3 className='titleFrontend'>Frontend:</h3>
+                            <img className='html' src={html} alt="" />
+                            <img className='css' src={css3} alt="" />
+                            <img className='js' src={js} alt="" />
+                            <img className='boostrap' src={boostrap} alt="" />
+                            <img className='jquery' src={jquery} alt="" />
+                            <img className='react' src={react} alt="" />
+                            <img className='fastapi' src={fastapi} alt="" />
+                            <img className='nodejs' src={nodejs} alt="" />
+                            <img className='git' src={git} alt="" />
+                            <img className='github' src={github} alt="" />
+                        </div>
+                        <div>
+                            <h3 className='titleBackend'>Backend:</h3>
+                            <h4 className='process'>In the learning process...</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

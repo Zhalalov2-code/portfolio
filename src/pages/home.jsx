@@ -3,6 +3,7 @@ import '../css/home.css'
 import AboutMe from "../components/aboutMe";
 import Skills from "../components/skills";
 import Footer from '../components/footer'
+import Projects from "../components/projects";
 
 function Home() {
     return (
@@ -16,6 +17,9 @@ function Home() {
                 </div>
                 <div className="row mt-3">
                     <Skills />
+                </div>
+                <div className="row mt-3">
+                    <Projects />
                 </div>
                 <div className="row mt-3 mb-2">
                     <Footer />

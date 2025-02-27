@@ -98,3 +98,8 @@
     text-align: center;
     color: yellowgreen;
 }
+
+.disFrontend{
+    position: relative;
+    left: 60px;
+}
