@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .navbar {
-    position: sticky;
     font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border: solid 1px #333;
     background: rgba(33, 33, 33, 0.9);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;  
-    top: 0px;
-    padding: 15px; 
-    z-index: 1000; 
+    opacity: 0.9;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -19,46 +19,56 @@
 }
 
 .navbar a:hover {
-    color: #4CAF50; 
+    color: yellowgreen;
     transform: scale(1.1);
 }
 
-.zhalalov2{
-    font-size: 20px;
-    color: greenyellow;
-    position: relative;
-    top: 10px;
-}
-
-.iconlinkedln {
-    font-size: 20px;
-    color: #ffffff; 
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.iconlinkedln:hover {
-    color: #2196F3; 
-    transform: scale(1.1);
-}
-
-button { 
-    background: white; 
-    border-radius: 10px;
+.navbar .a:hover {
     color: black;
-    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0px 0px 5px 1px white;
+    transform: scale(1.1);
 }
 
-button:hover {
-    background-color: yellowgreen;
-    color: white;
-    transform: scale(1.05); 
-    box-shadow: 0px 0px 5px 1px yellowgreen;
+.fixed-navbar {
+    position: fixed; /* Делаем navbar фиксированным */
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень для улучшения визуального разделения */
+    padding: 10px 15px; /* Уменьшаем отступы для фиксированного navbar */
+    border-radius: 0px;
+    background: rgba(33, 33, 33, 0.9); /* Поддерживаем полупрозрачный фон */
+    transition: padding 0.3s ease, background 0.3s ease; /* Плавное изменение padding и фона */
+    z-index: 1000;
+    opacity: 1;
 }
 
-button:active { 
-    color: black; 
-    background: white;
-    transform: scale(0.95);
-    box-shadow: 0px 0px 5px 1px white;
+.dropdown-item{
+    background: rgba(33, 33, 33, 0.9);
+}
+
+.dropdown-menu{
+    background: rgba(33, 33, 33, 0.9);
+}
+
+.navbar-brand{
+    color: yellowgreen;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-toggler {
+        background: rgba(33, 33, 33, 0.9);
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar .dropdown-item {
+        font-size: 14px;
+        background: rgba(33, 33, 33, 0.9);
+    }
 }

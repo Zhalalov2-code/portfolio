@@ -1,26 +1,61 @@
-import '../css/projects.css'
-import landing1 from '../img/landing1.png'
+import { useState } from 'react';
+import '../css/projects.css';
+import { projectData } from '../data/project-data'; // Импортируем данные
 
 function Projects() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    // Функция для переключения состояния
+    const toggleText = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+    const project = projectData?.project1 || {}; // Если данных нет, то будет пустой объект
+
+
     return (
-        <div>
+        <div id='projects'>
             <div className="container projects">
-                <div className='div1'>
-                    <h5 className='titleProjects'><b>Projects()</b></h5>
-                    <div className='project1'>
-                        <img className='landing1' src={landing1} alt="" />
-                        <p><b>title:</b> Landing-site</p>
-                        <p><b>Description:</b> <br /> This is my pet project – an adaptive landing <br /> page created to showcase my web development <br /> skills. The project uses HTML, CSS, and Bootstrap <br /> to create a stylish and responsive interface. <br /> I applied React and React Hooks to manage state <br /> and build reusable components. For routing, <br /> I used React Router, enabling smooth transitions <br /> between different pages.
-                            The project is fully <br /> responsive, thanks to adaptive layout techniques <br /> and the use of Bootstrap. This website is a great <br /> example of my experience in developing modern <br /> and efficient web applications.
-                        </p>
-                        <a href="https://zhalalov2-landing.netlify.app/" target='blank'><b>Preview Site()</b></a>
-                        <br />
-                        <a href="https://github.com/Zhalalov2-code/landing" target='blank'><b>View the code()</b></a>
+                <div className="row">
+                    {/* Заголовок проекта */}
+                    <div className="col-12 mb-4">
+                        <h4 className='titleProjects'><b>Projects()</b></h4>
+                    </div>
+                </div>
+
+                <div className="row">
+                    {/* Проект */}
+                    <div className="col-12 col-md-6 mb-4">
+                        <div className="project1 d-flex flex-column align-items-center">
+                            {/* Изображение проекта */}
+                            <img className='landing1 mb-3' src={project.img} alt="Landing Page" />
+
+                            {/* Заголовок проекта */}
+                            <p><b>Title:</b> {project.title}</p>
+
+                            {/* Описание проекта */}
+                            <p><b>Description:</b> read the description</p>
+                            <div className={`description ${isExpanded ? 'expanded' : ''}`}>
+                                <p>{project.description}</p>
+                            </div>
+
+                            {/* Кнопка для раскрытия текста */}
+                            <button className="btn btn-link btn1" onClick={toggleText}>
+                                {isExpanded ? "Show Less" : "Show More"}
+                            </button>
+
+                            {/* Ссылки на проект */}
+                            <div className="project-links mt-2">
+                                <a href={project.links.previewSite} target='_blank' rel="noopener noreferrer"><b>Preview Site()</b></a>
+                                <br />
+                                <a href={project.links.viewCode} target='_blank' rel="noopener noreferrer"><b>View the code()</b></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Projects;

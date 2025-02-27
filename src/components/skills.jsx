@@ -1,39 +1,40 @@
 import '../css/skills.css'
-import html from '../img/html.png'
-import css3 from '../img/css3.png'
-import js from '../img/js.png'
-import boostrap from '../img/boostrap.png'
-import jquery from '../img/jquery.png'
-import react from '../img/react.png'
-import fastapi from '../img/fastApi.png'
-import nodejs from '../img/nodejs.png'
-import git from '../img/git.png'
-import github from '../img/github.png'
 
 function Skills() {
+    const skills = [
+        { name: 'HTML', progress: 85 },
+        { name: 'CSS3', progress: 75 },
+        { name: 'JavaScript', progress: 70 },
+        { name: 'Bootstrap', progress: 95 },
+        { name: 'jQuery', progress: 90 },
+        { name: 'React', progress: 80 },
+        { name: 'FastAPI', progress: 75 },
+        { name: 'Node.js', progress: 60 },
+        { name: 'Git', progress: 60 },
+        { name: 'GitHub', progress: 65 }
+    ];
+
     return (
-        <div>
+        <div id='skills'>
             <div className="container skills">
-                <div className='div1'>
-                    <h4 className='titleSkills'>skills()</h4>
-                    <div className='disFrontend'>
-                        <div>
-                            <h3 className='titleFrontend'>Frontend:</h3>
-                            <img className='html' src={html} alt="" />
-                            <img className='css' src={css3} alt="" />
-                            <img className='js' src={js} alt="" />
-                            <img className='boostrap' src={boostrap} alt="" />
-                            <img className='jquery' src={jquery} alt="" />
-                            <img className='react' src={react} alt="" />
-                            <img className='fastapi' src={fastapi} alt="" />
-                            <img className='nodejs' src={nodejs} alt="" />
-                            <img className='git' src={git} alt="" />
-                            <img className='github' src={github} alt="" />
+                <h4 className='titleSkills'><b>skills()</b></h4>
+                <div className='div2 row'>
+                    <div className='col-12'>
+                        <h3 className='titleFrontend text-center'>Frontend:</h3>
+                        <div className="row mt-5">
+                            {skills.slice(0, 10).map((skill, index) => (
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2" key={index}>
+                                    <h4>{skill.name}</h4>
+                                    <div className="progress" role="progressbar" aria-label={`Progress for ${skill.name}`} aria-valuenow={skill.progress} aria-valuemin="0" aria-valuemax="100">
+                                        <div className="progress-bar bg-success" style={{ width: `${skill.progress}%` }}></div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <div>
-                            <h3 className='titleBackend'>Backend:</h3>
-                            <h4 className='process'>In the learning process...</h4>
-                        </div>
+                    </div>
+                    <div className='col-12 mt-5'>
+                        <h3 className='titleBackend text-center'>Backend:</h3>
+                        <h4 className='process mt-5 text-center'>In the learning process...</h4>
                     </div>
                 </div>
             </div>

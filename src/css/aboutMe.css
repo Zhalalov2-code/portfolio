@@ -1,65 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.aboutMe{
+.aboutMe {
     font-family: 'Montserrat', sans-serif;
-    border: solid 1px black;
+    border: 1px solid #333;
     border-radius: 10px;
-    height: 770px;
-    border: solid 1px #333;
-    background: #212121; 
-    color: white;
     background: rgba(33, 33, 33, 0.9);
+    color: white;
+    padding: 30px;
 }
 
-.hello{
-    position: relative;
-    left: 100px;
-    top: 50px;
+#about {
+    padding-top: 80px; /* Увеличиваем отступ, чтобы учесть высоту navbar */
+    margin-top: -80px;  /* Убираем лишний отступ сверху */
 }
+
+.hello, .frontend {
+    color: white;
+}
+
 .zalkarName{
-    position: relative;
-    left: 100px;
-    top: 50px;
-    color: greenyellow;
+    color: yellowgreen;
 }
-.frontend{
-    position: relative;
-    top: 50px;
-    left: 100px;
+
+.zalkarName {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
-.zalkarFoto{
+
+.frontend {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Стили для фото */
+.zalkarFoto {
     width: 300px;
     height: 300px;
     background-image: url('../img/zalkar.jpg');
     background-size: cover;
-    border-radius: 150px;
-    position: relative;
-    left: 770px;
-    top: -140px;
+    background-position: center;
+    border-radius: 50%;
     box-shadow: 0px 0px 10px 2px white;
     z-index: 2;
+    position: relative;
+    margin: 0 auto; /* Центрируем фото */
 }
 
-.about{
-    position: relative;
-    left: 100px;
-    top: -200px;
+/* Контейнер для обоих столбцов */
+.div1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
-.nameAbout{
+
+/* Левый блок */
+.col-5 {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Текст о себе */
+.about {
+    margin-top: 20px;
+}
+
+.nameAbout {
     color: greenyellow;
+    font-weight: bold;
 }
 
-.div1{
-    position: relative;
-    left: -60px;
+.learning p {
+    margin: 5px 0;
 }
 
-.learning{
-    position: relative;
-    top: -520px;
-    left: 750px;
-}
-
-.titleLearning{
+.titleLearning {
     color: yellowgreen;
+    font-weight: bold;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .aboutMe {
+        padding: 20px;
+    }
+
+    .zalkarFoto {
+        width: 250px;
+        height: 250px;
+    }
+
+    .zalkarName {
+        font-size: 2rem;
+    }
+
+    .frontend {
+        font-size: 1.2rem;
+    }
+
+    .div1 {
+        flex-direction: column; /* Меняем расположение на колонку */
+        align-items: center;
+    }
+
+    .col{
+        min-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .zalkarName {
+        font-size: 1.8rem;
+    }
+
+    .frontend {
+        font-size: 1rem;
+    }
 }
