@@ -48,9 +48,10 @@ function Navbar() {
                                 <LinkScroll smooth className="nav-link" to="#projects">Projects</LinkScroll>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
                                     Contact
                                 </a>
+
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a className="dropdown-item a" href="https://www.linkedin.com/in/zalkarbek-zhalalov-4b0785341" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i> LinkedIn</a></li>
                                     <li><a className="dropdown-item a" href="https://github.com/Zhalalov2-code" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-github"></i> GitHub</a></li>
