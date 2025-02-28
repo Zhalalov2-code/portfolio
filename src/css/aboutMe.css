@@ -80,6 +80,17 @@
     font-weight: bold;
 }
 
+.description {
+    overflow: hidden;
+    height: 100px; /* начальная высота для скрытого текста */
+    transition: height 0.3s ease-out; /* плавное изменение высоты */
+}
+
+.description.expanded {
+    height: 500px; /* устанавливаем максимальную высоту для развернутого текста, можно подстроить */
+}
+
+
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
     .aboutMe {

@@ -14,11 +14,10 @@ function AboutMe() {
                         </div>
                         <div className="about">
                             <h5 className="nameAbout"><b>aboutMe()</b></h5>
-                            <p className=''>
-                                My name is Zalkarbek, and I am a front-end developer with a passion for building responsive and user-friendly web applications. I started my journey in IT in 2018 as a self-taught Python programmer and later pursued a degree in "Automated Systems and Control" at college, graduating in 2021. Afterward, I continued my education at university, completing a degree in "Internet Technologies and Management" in 2024.
-                                I have hands-on experience with HTML, CSS, Bootstrap, JavaScript, jQuery, React, and FastAPI. In 2023, I completed a 3-month internship at Deutsche Post, where I gained valuable real-world experience. I continued my internship in 2024, further developing my front-end skills and learning how to collaborate effectively in a team environment. I am also actively expanding my knowledge of back-end development and aspire to grow into a full-stack developer.
-                                I am passionate about learning new technologies and continuously improving my skills to build high-quality and scalable web applications.
-                            </p>
+                            <p>
+    My name is Zalkarbek, a front-end developer with a passion for building responsive and user-friendly web applications. I started in IT in 2018 as a self-taught Python programmer and graduated with a degree in "Automated Systems and Control" in 2021, followed by a degree in "Internet Technologies and Management" in 2024. I have experience with HTML, CSS, JavaScript, React, and FastAPI, and completed internships at Deutsche Post in 2023 and 2024, where I further developed my front-end skills. I'm also expanding my knowledge in back-end development and aiming to become a full-stack developer.
+</p>
+
                         </div>
                     </div>
                     {/* Правый блок */}
