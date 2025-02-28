@@ -48,7 +48,7 @@ function Navbar() {
                                 <LinkScroll smooth className="nav-link" to="#projects">Projects</LinkScroll>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Contact
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
