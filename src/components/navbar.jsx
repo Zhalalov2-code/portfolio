@@ -47,18 +47,8 @@ function Navbar() {
                             <li className="nav-item">
                                 <LinkScroll smooth className="nav-link" to="#projects">Projects</LinkScroll>
                             </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
-                                    Contact
-                                </a>
-
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a className="dropdown-item" href="https://www.linkedin.com/in/zalkarbek-zhalalov-4b0785341" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                                    <li><a className="dropdown-item" href="https://github.com/Zhalalov2-code" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-github"></i> GitHub</a></li>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="mailto:zikozhalalov3@gmail.com"><i className="fa-regular fa-envelope"></i> Email Me</a></li>
-                                </ul>
-                            </li>
+                            <a className="dropdown-item mt-2 linkedln" href="https://www.linkedin.com/in/zalkarbek-zhalalov-4b0785341" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a className="dropdown-item mt-2 github" href="https://github.com/Zhalalov2-code" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-square-github"></i> GitHub</a>
                         </ul>
                     </div>
                 </div>

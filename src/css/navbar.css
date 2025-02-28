@@ -54,6 +54,16 @@
     color: yellowgreen;
 }
 
+.linkedln{
+    position: relative;
+    left: 10px;
+}
+
+.github{
+    position: relative;
+    left: 20px;
+}
+
 @media (max-width: 768px) {
     .navbar .navbar-toggler {
         background: rgba(33, 33, 33, 0.9);
@@ -70,5 +80,15 @@
     .navbar .dropdown-item {
         font-size: 14px;
         background: rgba(33, 33, 33, 0.9);
+    }
+
+    .linkedln{
+        position: relative;
+        left: -0px;
+    }
+
+    .github{
+        position: relative;
+        left: -0px;
     }
 }
