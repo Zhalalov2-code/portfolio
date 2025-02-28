@@ -1,8 +1,44 @@
-.body{
+/* Основной стиль для .body */
+.body {
     background-image: url('../img/matriza1.gif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding-bottom: 10px;
     overflow-x: hidden;
+}
+
+/* Мобильные устройства (max-width: 480px) */
+@media (max-width: 480px) {
+    .body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll; /* Фиксированное прикрепление фона может быть неудобным на маленьких экранах */
+    }
+}
+
+/* Планшеты (max-width: 768px) */
+@media (max-width: 768px) {
+    .body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
+
+/* Десктопы (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+/* Очень большие экраны (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
 }
